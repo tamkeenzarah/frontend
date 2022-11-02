@@ -2,7 +2,7 @@
 {
     "name": "node_express_app",
     "version": "1.0.0",
-    "description": "Node.js Express Application",
+    "description": "Devops Project",
     "author": "TamkeenZarah <tamkeenzarah@gmail.com>",
     "main": "server.js",
     "scripts": {
