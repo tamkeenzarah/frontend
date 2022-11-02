@@ -3,7 +3,7 @@
     "name": "node_express_app",
     "version": "1.0.0",
     "description": "Node.js Express Application",
-    "author": "Ali Kahoot <kahoot.ali@outlook.com>",
+    "author": "TamkeenZarah <tamkeenzarah@gmail.com>",
     "main": "server.js",
     "scripts": {
       "start": "node server.js"
