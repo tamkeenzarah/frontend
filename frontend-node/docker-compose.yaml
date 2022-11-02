@@ -11,21 +11,4 @@ services:
       replicas: 3
     networks:
     - application
-  frontend:
-    build: 
-      context: frontend-node/
-      dockerfile: Dockerfile
-    init: true
-    environment:
-      BACKEND_URL: backend:8080
-    deploy:
-      replicas: 1
-    networks:
-    - application
-    ports:
-    - "9091:8080"
-    depends_on:
-    - backend
-networks:
-  application:
-    name: application
+  
