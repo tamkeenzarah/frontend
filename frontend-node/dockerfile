@@ -1,11 +1,11 @@
 
 FROM node:10-alpine
 
-LABEL name="Node Express Application" \   
+LABEL name="Devops Project" \   
      maintainer="TamkeenZarah <tamkeenzarah@gmail.com>" \
-     summary="A Node Express application"
+     summary="Devops Project"
 
-# Create app directory
+
 WORKDIR /app
 
 EXPOSE 8080
