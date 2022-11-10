@@ -6,7 +6,7 @@ on:
   pull_request:
 
 env:
-  IMAGE_NAME: golang-sample-app
+  IMAGE_NAME: devops project app
 
 jobs:
   Build-and-Push-Image:
@@ -19,19 +19,16 @@ jobs:
       run:
         shell: bash
     steps:
-    - name: Set up Go 1.13
-      uses: actions/setup-go@v1
-      with:
-        go-version: 1.13
-      id: go
+    - name: Set up node 
+      uses: actions/setup-node@v1
+      id: node
 
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
 
     - name: Build Code
       run: |
-        go get github.com/thedevsaddam/renderer/...
-        go build -v .
+        node build -v .
     
     - name: Initialize Pipeline
       uses: mshick/add-pr-comment@v1
