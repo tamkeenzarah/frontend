@@ -19,3 +19,5 @@ RUN apk add curl
 COPY server.js ./
 
 CMD [ "npm", "start" ]
+
+
