@@ -9,15 +9,7 @@ pipeline {
             steps {
                 sh 'node --version'
             }
-        }
-        stage('build'){
-            node {
-                    checkout scm
-
-                    def customImage = docker.build("my-image:${env.BUILD_ID}")
-
-}
-        
+        }    
         }
     }
 }
