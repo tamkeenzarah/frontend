@@ -1,6 +1,6 @@
 def gitUrl = "https://github.com/tamkeenzarah/frontend.git"
-job('test-job') {
-	description "My Project DSL GitHub Integration"
+job('Project-job') {
+	description "Project DSL GitHub Integration"
 	scm {
 		git { 
 			remote {
