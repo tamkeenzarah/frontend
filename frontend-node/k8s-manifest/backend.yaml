@@ -7,16 +7,16 @@ spec:
   selector:
     matchLabels:
       tier: backend
-      app: dice
+      app: devops-project
   template:
     metadata:
       labels:
         tier: backend
-        app: dice
+        app: devops-project
     spec:
       containers:
       - name: backend
-        image: kahootali/python-backend:batch9
+        image: tamkeenzarah/python-backend:devops-project
         ports:
         - containerPort: 8080
           name: tcp
@@ -29,7 +29,7 @@ metadata:
 spec:
   selector:
     tier: backend
-    app: dice
+    app: devops-project
   ports:
   - protocol: TCP
     port: 8080
